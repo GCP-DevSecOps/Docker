@@ -1,0 +1,13 @@
+[Docker install on different Linux distribution platforms]
+
+● Ubuntu
+for "root" user.
+$ apt install docker.io
+for "non-root" user.
+$ sudo apt-get install docker.io
+If want to avoid typing sudo whenever run the docker command, add "non-root" username to the 'docker' group.
+$ sudo usermod -aG docker ${USER}
+In above command, the 'docker' indicates an Linux Group.
+In above command, the '${USER}' indicates an current User.
+
+●
