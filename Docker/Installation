@@ -2,8 +2,14 @@
 
 ● Ubuntu
 for "root" user.
-$ apt install docker.io
+$ apt update -y
+$ apt install docker.io -y
+$ apt-get update
+$ apt-get install docker.io
 for "non-root" user.
+$ sudo apt update -y
+$ sudo apt install docker.io -y
+$ sudo apt-get update
 $ sudo apt-get install docker.io
 If want to avoid typing sudo whenever run the docker command, add "non-root" username to the 'docker' group.
 $ sudo usermod -aG docker ${USER}
